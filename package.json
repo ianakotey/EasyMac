@@ -1,0 +1,16 @@
+{
+  "name": "easymac",
+  "version": "1.0.0",
+  "description": "an App to allow easily change of mac address",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Akotey",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^7.1.7",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
