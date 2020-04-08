@@ -13,7 +13,6 @@ async function get_interfaces_from_cmd() {
 
     return (await exec('netsh interface show interface')).stdout
 
-    return raw_interface_info.stdout
 
 }
 

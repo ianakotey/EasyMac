@@ -5,32 +5,34 @@
 
 const electron = require('electron')
 
-const { get_interfaces } = require(`./mac_${process.platform}.js`)
+const {
+    get_interfaces
+} = require(`./mac_${process.platform}.js`)
+
 
 /* ̿̿ ̿'̿'\̵͇̿̿\з=(•_•)=ε/̵͇̿̿/'̿'̿ ̿ */
 window.onload = () => {
-    get_interfaces().then( interfaces => {
-        
-        interfaceText = interfaces.map( interface => `<li class="collection-item green-text center-align">${interface['Interface Name']}</li>\n`).join('')
+    get_interfaces().then(interfaces => {
+
+        interfaceText = interfaces.map(interface => `<li class="collection-item green-text center-align btn" style="display:block">${interface['Interface Name']}</li>\n`).join('')
         console.log(interfaces)
-        
+
 
         const list = document.querySelector('div.col.s7.m7.l9.teal > ul')
-        list.innerHTML = 
-`<!-- Network Interfaces here -->
-<li class="collection-header center-align blue-text">Network Interfaces</li>
-${interfaceText}
-<!-- End of Network Interfaces -->`
+        list.innerHTML =
+        `<!-- Network Interfaces here -->
+        <li class="collection-header center-align blue-text">Network Interfaces</li>
+        ${interfaceText}
+        <!-- End of Network Interfaces -->`
 
-})
-} 
+    })
+}
 
 
 document.querySelector('#minimize').addEventListener('click', () => {
     electron.remote.getCurrentWindow().minimize();
 });
 
-//console.log(require('shell'))
 
 document.querySelector('#maximizeOrRestore').addEventListener('click', (event) => {
     const currentWindow = electron.remote.getCurrentWindow();
