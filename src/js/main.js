@@ -4,7 +4,7 @@ const url = require('url')
 
 let win;
 
-process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'prod';
 
 
 const inDevelopment = () => process.env.NODE_ENV === 'development'
@@ -27,14 +27,12 @@ function createWindow() {
         {
             width: 800,
             height: 600,
-            //icon: path.join(__dirname, "../../assets/img/icons8-person-24.png"),
-            //transparent: true,
+            minWidth: 800,
+            minHeight: 600,
+            icon: path.join(__dirname, "../../assets/img/icons8-person-24.png"),
             frame: inDevelopment(),
-            radii: [5,5,5,5],
-            webPreferences: { nodeIntegration: true },
-            
-        
-            
+            radii: [5, 5, 5, 5],
+            webPreferences: { nodeIntegration: true }
         }
     )
 
@@ -45,7 +43,6 @@ function createWindow() {
     })
 
     win.loadURL(first_url)
-    console.log(first_url)
 
     if (inDevelopment())
         win.webContents.openDevTools();
