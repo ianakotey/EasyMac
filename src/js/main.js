@@ -4,7 +4,7 @@ const url = require('url')
 
 let win;
 
-process.env.NODE_ENV = 'prod';
+process.env.NODE_ENV = 'production';
 
 
 const inDevelopment = () => process.env.NODE_ENV === 'development'

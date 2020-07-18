@@ -1,0 +1,740 @@
+'[\r\n' +
+  '    {\r\n' +
+  '        "CimClass":  {\r\n' +
+  '                         "CimSuperClassName":  "CIM_NetworkPort",\r\n' +
+  '                         "CimSuperClass":  "ROOT/StandardCimv2:CIM_NetworkPort",\r\n' +
+  '                         "CimClassProperties":  "Caption Description ElementName InstanceID CommunicationStatus DetailedStatus HealthState InstallDate Name OperatingStatus OperationalStatus PrimaryStatus Status StatusDescriptions AvailableRequestedStates EnabledDefault = 2 EnabledState = 5 OtherEnabledState RequestedState = 12 TimeOfLastStateChange TransitioningToState = 12 AdditionalAvailability Availability CreationClassName DeviceID ErrorCleared ErrorDescription IdentifyingDescriptions LastErrorCode MaxQuiesceTime OtherIdentifyingInfo PowerManagementCapabilities PowerManagementSupported PowerOnHours StatusInfo SystemCreationClassName SystemName TotalPowerOnHours MaxSpeed OtherPortType PortType RequestedSpeed Speed UsageRestriction ActiveMaximumTransmissionUnit AutoSense FullDuplex LinkTechnology NetworkAddresses OtherLinkTechnology OtherNetworkPortType PermanentAddress PortNumber SupportedMaximumTransmissionUnit AdminLocked ComponentID ConnectorPresent DeviceName DeviceWakeUpEnable DriverDate DriverDateData DriverDescription DriverMajorNdisVersion DriverMinorNdisVersion DriverName DriverProvider DriverVersionString EndPointInterface HardwareInterface Hidden HigherLayerInterfaceIndices IMFilter InterfaceAdminStatus InterfaceDescription InterfaceGuid InterfaceIndex InterfaceName InterfaceOperationalStatus InterfaceType iSCSIInterface LowerLayerInterfaceIndices MajorDriverVersion MediaConnectState MediaDuplexState MinorDriverVersion MtuSize NdisMedium NdisPhysicalMedium NetLuid NetLuidIndex NotUserRemovable OperationalStatusDownDefaultPortNotAuthenticated OperationalStatusDownInterfacePaused OperationalStatusDownLowPowerState OperationalStatusDownMediaDisconnected PnPDeviceID PromiscuousMode ReceiveLinkSpeed State TransmitLinkSpeed Virtual VlanID WdmInterface",\r\n' +
+  '                         "CimClassQualifiers":  "UMLPackagePath = \\"CIM::Device::Ports\\" dynamic = True locale = 1033 provider = \\"NetAdapterCim\\"",\r\n' +
+  '                         "CimClassMethods":  "RequestStateChange SetPowerState Reset EnableDevice OnlineDevice QuiesceDevice SaveProperties RestoreProperties Enable Disable Restart Lock Unlock Rename",\r\n' +
+  '                         "CimSystemProperties":  "Microsoft.Management.Infrastructure.CimSystemProperties"\r\n' +
+  '                     },\r\n' +
+  '        "CimInstanceProperties":  [\r\n' +
+  '                                      "Caption",\r\n' +
+  '                                      "Description",\r\n' +
+  '                                      "ElementName",\r\n' +
+  '                                      "InstanceID = \\"{799123C1-F005-4E08-924C-8FF25D25279C}\\"",\r\n' +
+  '                                      "CommunicationStatus",\r\n' +
+  '                                      "DetailedStatus",\r\n' +
+  '                                      "HealthState",\r\n' +
+  '                                      "InstallDate",\r\n' +
+  '                                      "Name = \\"Ethernet\\"",\r\n' +
+  '                                      "OperatingStatus",\r\n' +
+  '                                      "OperationalStatus",\r\n' +
+  '                                      "PrimaryStatus",\r\n' +
+  '                                      "Status",\r\n' +
+  '                                      "StatusDescriptions",\r\n' +
+  '                                      "AvailableRequestedStates",\r\n' +
+  '                                      "EnabledDefault = 2",\r\n' +
+  '                                      "EnabledState = 5",\r\n' +
+  '                                      "OtherEnabledState",\r\n' +
+  '                                      "RequestedState = 12",\r\n' +
+  '                                      "TimeOfLastStateChange",\r\n' +
+  '                                      "TransitioningToState = 12",\r\n' +
+  '                                      "AdditionalAvailability",\r\n' +
+  '                                      "Availability",\r\n' +
+  '                                      "CreationClassName = \\"MSFT_NetAdapter\\"",\r\n' +
+  '                                      "DeviceID = \\"{799123C1-F005-4E08-924C-8FF25D25279C}\\"",\r\n' +
+  '                                      "ErrorCleared",\r\n' +
+  '                                      "ErrorDescription",\r\n' +
+  '                                      "IdentifyingDescriptions",\r\n' +
+  '                                      "LastErrorCode",\r\n' +
+  '                                      "MaxQuiesceTime",\r\n' +
+  '                                      "OtherIdentifyingInfo",\r\n' +
+  '                                      "PowerManagementCapabilities",\r\n' +
+  '                                      "PowerManagementSupported",\r\n' +
+  '                                      "PowerOnHours",\r\n' +
+  '                                      "StatusInfo",\r\n' +
+  '                                      "SystemCreationClassName = \\"CIM_NetworkPort\\"",\r\n' +
+  '                                      "SystemName = \\"DESKTOP-S3I47AB\\"",\r\n' +
+  '                                      "TotalPowerOnHours",\r\n' +
+  '                                      "MaxSpeed",\r\n' +
+  '                                      "OtherPortType",\r\n' +
+  '                                      "PortType",\r\n' +
+  '                                      "RequestedSpeed",\r\n' +
+  '                                      "Speed",\r\n' +
+  '                                      "UsageRestriction",\r\n' +
+  '                                      "ActiveMaximumTransmissionUnit = 1500",\r\n' +
+  '                                      "AutoSense",\r\n' +
+  '                                      "FullDuplex",\r\n' +
+  '                                      "LinkTechnology",\r\n' +
+  '                                      "NetworkAddresses = ...",\r\n' +
+  '                                      "OtherLinkTechnology",\r\n' +
+  '                                      "OtherNetworkPortType",\r\n' +
+  '                                      "PermanentAddress = \\"E454E80CC098\\"",\r\n' +
+  '                                      "PortNumber = 0",\r\n' +
+  '                                      "SupportedMaximumTransmissionUnit",\r\n' +
+  '                                      "AdminLocked = False",\r\n' +
+  '                                      "ComponentID = \\"PCI\\\\VEN_10EC\\u0026DEV_8168\\u0026SUBSYS_09491028\\u0026R...",\r\n' +
+  '                                      "ConnectorPresent = True",\r\n' +
+  '                                      "DeviceName = \\"\\\\Device\\\\{799123C1-F005-4E08-924C-8FF25D...",\r\n' +
+  '                                      "DeviceWakeUpEnable = True",\r\n' +
+  '                                      "DriverDate = \\"2019-05-10\\"",\r\n' +
+  '                                      "DriverDateData = 132019200000000000",\r\n' +
+  '                                      "DriverDescription = \\"Realtek PCIe GbE Family Controller\\"",\r\n' +
+  '                                      "DriverMajorNdisVersion = 6",\r\n' +
+  '                                      "DriverMinorNdisVersion = 40",\r\n' +
+  '                                      "DriverName = \\"\\\\SystemRoot\\\\System32\\\\drivers\\\\rt640x64.s...",\r\n' +
+  '                                      "DriverProvider = \\"Realtek\\"",\r\n' +
+  '                                      "DriverVersionString = \\"10.35.510.2019\\"",\r\n' +
+  '                                      "EndPointInterface = False",\r\n' +
+  '                                      "HardwareInterface = True",\r\n' +
+  '                                      "Hidden = False",\r\n' +
+  '                                      "HigherLayerInterfaceIndices = ...",\r\n' +
+  '                                      "IMFilter = False",\r\n' +
+  '                                      "InterfaceAdminStatus = 1",\r\n' +
+  '                                      "InterfaceDescription = \\"Realtek PCIe GbE Family Controller\\"",\r\n' +
+  '                                      "InterfaceGuid = \\"{799123C1-F005-4E08-924C-8FF25D25279C}\\"",\r\n' +
+  '                                      "InterfaceIndex = 14",\r\n' +
+  '                                      "InterfaceName = \\"ethernet_32769\\"",\r\n' +
+  '                                      "InterfaceOperationalStatus = 2",\r\n' +
+  '                                      "InterfaceType = 6",\r\n' +
+  '                                      "iSCSIInterface = False",\r\n' +
+  '                                      "LowerLayerInterfaceIndices",\r\n' +
+  '                                      "MajorDriverVersion = 10",\r\n' +
+  '                                      "MediaConnectState = 2",\r\n' +
+  '                                      "MediaDuplexState = 0",\r\n' +
+  '                                      "MinorDriverVersion = 35",\r\n' +
+  '                                      "MtuSize = 1500",\r\n' +
+  '                                      "NdisMedium = 0",\r\n' +
+  '                                      "NdisPhysicalMedium = 14",\r\n' +
+  '                                      "NetLuid = 1689399632855040",\r\n' +
+  '                                      "NetLuidIndex = 32769",\r\n' +
+  '                                      "NotUserRemovable = False",\r\n' +
+  '                                      "OperationalStatusDownDefaultPortNotAuthenticated = False",\r\n' +
+  '                                      "OperationalStatusDownInterfacePaused = False",\r\n' +
+  '                                      "OperationalStatusDownLowPowerState = False",\r\n' +
+  '                                      "OperationalStatusDownMediaDisconnected = True",\r\n' +
+  '                                      "PnPDeviceID = \\"PCI\\\\VEN_10EC\\u0026DEV_8168\\u0026SUBSYS_09491028\\u0026R...",\r\n' +
+  '                                      "PromiscuousMode = False",\r\n' +
+  '                                      "ReceiveLinkSpeed",\r\n' +
+  '                                      "State = 2",\r\n' +
+  '                                      "TransmitLinkSpeed",\r\n' +
+  '                                      "Virtual = False",\r\n' +
+  '                                      "VlanID",\r\n' +
+  '                                      "WdmInterface = False"\r\n' +
+  '                                  ],\r\n' +
+  '        "CimSystemProperties":  {\r\n' +
+  '                                    "Namespace":  "ROOT/StandardCimv2",\r\n' +
+  '                                    "ServerName":  "DESKTOP-S3I47AB",\r\n' +
+  '                                    "ClassName":  "MSFT_NetAdapter",\r\n' +
+  '                                    "Path":  null\r\n' +
+  '                                },\r\n' +
+  '        "MacAddress":  "E4-54-E8-0C-C0-98",\r\n' +
+  '        "Status":  "Disconnected",\r\n' +
+  '        "LinkSpeed":  "0 bps",\r\n' +
+  '        "MediaType":  "802.3",\r\n' +
+  '        "PhysicalMediaType":  "802.3",\r\n' +
+  '        "AdminStatus":  1,\r\n' +
+  '        "MediaConnectionState":  2,\r\n' +
+  '        "DriverInformation":  "Driver Date 2019-05-10 Version 10.35.510.2019 NDIS 6.40",\r\n' +
+  '        "DriverFileName":  "rt640x64.sys",\r\n' +
+  '        "NdisVersion":  "6.40",\r\n' +
+  '        "ifOperStatus":  2,\r\n' +
+  '        "ifAlias":  "Ethernet",\r\n' +
+  '        "InterfaceAlias":  "Ethernet",\r\n' +
+  '        "ifIndex":  14,\r\n' +
+  '        "ifDesc":  "Realtek PCIe GbE Family Controller",\r\n' +
+  '        "ifName":  "ethernet_32769",\r\n' +
+  '        "DriverVersion":  "10.35.510.2019",\r\n' +
+  '        "LinkLayerAddress":  "E4-54-E8-0C-C0-98",\r\n' +
+  '        "Caption":  null,\r\n' +
+  '        "Description":  null,\r\n' +
+  '        "ElementName":  null,\r\n' +
+  '        "InstanceID":  "{799123C1-F005-4E08-924C-8FF25D25279C}",\r\n' +
+  '        "CommunicationStatus":  null,\r\n' +
+  '        "DetailedStatus":  null,\r\n' +
+  '        "HealthState":  null,\r\n' +
+  '        "InstallDate":  null,\r\n' +
+  '        "Name":  "Ethernet",\r\n' +
+  '        "OperatingStatus":  null,\r\n' +
+  '        "OperationalStatus":  null,\r\n' +
+  '        "PrimaryStatus":  null,\r\n' +
+  '        "StatusDescriptions":  null,\r\n' +
+  '        "AvailableRequestedStates":  null,\r\n' +
+  '        "EnabledDefault":  2,\r\n' +
+  '        "EnabledState":  5,\r\n' +
+  '        "OtherEnabledState":  null,\r\n' +
+  '        "RequestedState":  12,\r\n' +
+  '        "TimeOfLastStateChange":  null,\r\n' +
+  '        "TransitioningToState":  12,\r\n' +
+  '        "AdditionalAvailability":  null,\r\n' +
+  '        "Availability":  null,\r\n' +
+  '        "CreationClassName":  "MSFT_NetAdapter",\r\n' +
+  '        "DeviceID":  "{799123C1-F005-4E08-924C-8FF25D25279C}",\r\n' +
+  '        "ErrorCleared":  null,\r\n' +
+  '        "ErrorDescription":  null,\r\n' +
+  '        "IdentifyingDescriptions":  null,\r\n' +
+  '        "LastErrorCode":  null,\r\n' +
+  '        "MaxQuiesceTime":  null,\r\n' +
+  '        "OtherIdentifyingInfo":  null,\r\n' +
+  '        "PowerManagementCapabilities":  null,\r\n' +
+  '        "PowerManagementSupported":  null,\r\n' +
+  '        "PowerOnHours":  null,\r\n' +
+  '        "StatusInfo":  null,\r\n' +
+  '        "SystemCreationClassName":  "CIM_NetworkPort",\r\n' +
+  '        "SystemName":  "DESKTOP-S3I47AB",\r\n' +
+  '        "TotalPowerOnHours":  null,\r\n' +
+  '        "MaxSpeed":  null,\r\n' +
+  '        "OtherPortType":  null,\r\n' +
+  '        "PortType":  null,\r\n' +
+  '        "RequestedSpeed":  null,\r\n' +
+  '        "Speed":  null,\r\n' +
+  '        "UsageRestriction":  null,\r\n' +
+  '        "ActiveMaximumTransmissionUnit":  1500,\r\n' +
+  '        "AutoSense":  null,\r\n' +
+  '        "FullDuplex":  null,\r\n' +
+  '        "LinkTechnology":  null,\r\n' +
+  '        "NetworkAddresses":  [\r\n' +
+  '                                 "E454E80CC098"\r\n' +
+  '                             ],\r\n' +
+  '        "OtherLinkTechnology":  null,\r\n' +
+  '        "OtherNetworkPortType":  null,\r\n' +
+  '        "PermanentAddress":  "E454E80CC098",\r\n' +
+  '        "PortNumber":  0,\r\n' +
+  '        "SupportedMaximumTransmissionUnit":  null,\r\n' +
+  '        "AdminLocked":  false,\r\n' +
+  '        "ComponentID":  "PCI\\\\VEN_10EC\\u0026DEV_8168\\u0026SUBSYS_09491028\\u0026REV_15",\r\n' +
+  '        "ConnectorPresent":  true,\r\n' +
+  '        "DeviceName":  "\\\\Device\\\\{799123C1-F005-4E08-924C-8FF25D25279C}",\r\n' +
+  '        "DeviceWakeUpEnable":  true,\r\n' +
+  '        "DriverDate":  "2019-05-10",\r\n' +
+  '        "DriverDateData":  132019200000000000,\r\n' +
+  '        "DriverDescription":  "Realtek PCIe GbE Family Controller",\r\n' +
+  '        "DriverMajorNdisVersion":  6,\r\n' +
+  '        "DriverMinorNdisVersion":  40,\r\n' +
+  '        "DriverName":  "\\\\SystemRoot\\\\System32\\\\drivers\\\\rt640x64.sys",\r\n' +
+  '        "DriverProvider":  "Realtek",\r\n' +
+  '        "DriverVersionString":  "10.35.510.2019",\r\n' +
+  '        "EndPointInterface":  false,\r\n' +
+  '        "HardwareInterface":  true,\r\n' +
+  '        "Hidden":  false,\r\n' +
+  '        "HigherLayerInterfaceIndices":  [\r\n' +
+  '                                            33\r\n' +
+  '                                        ],\r\n' +
+  '        "IMFilter":  false,\r\n' +
+  '        "InterfaceAdminStatus":  1,\r\n' +
+  '        "InterfaceDescription":  "Realtek PCIe GbE Family Controller",\r\n' +
+  '        "InterfaceGuid":  "{799123C1-F005-4E08-924C-8FF25D25279C}",\r\n' +
+  '        "InterfaceIndex":  14,\r\n' +
+  '        "InterfaceName":  "ethernet_32769",\r\n' +
+  '        "InterfaceOperationalStatus":  2,\r\n' +
+  '        "InterfaceType":  6,\r\n' +
+  '        "iSCSIInterface":  false,\r\n' +
+  '        "LowerLayerInterfaceIndices":  null,\r\n' +
+  '        "MajorDriverVersion":  10,\r\n' +
+  '        "MediaConnectState":  2,\r\n' +
+  '        "MediaDuplexState":  0,\r\n' +
+  '        "MinorDriverVersion":  35,\r\n' +
+  '        "MtuSize":  1500,\r\n' +
+  '        "NdisMedium":  0,\r\n' +
+  '        "NdisPhysicalMedium":  14,\r\n' +
+  '        "NetLuid":  1689399632855040,\r\n' +
+  '        "NetLuidIndex":  32769,\r\n' +
+  '        "NotUserRemovable":  false,\r\n' +
+  '        "OperationalStatusDownDefaultPortNotAuthenticated":  false,\r\n' +
+  '        "OperationalStatusDownInterfacePaused":  false,\r\n' +
+  '        "OperationalStatusDownLowPowerState":  false,\r\n' +
+  '        "OperationalStatusDownMediaDisconnected":  true,\r\n' +
+  '        "PnPDeviceID":  "PCI\\\\VEN_10EC\\u0026DEV_8168\\u0026SUBSYS_09491028\\u0026REV_15\\\\01000000684CE00000",\r\n' +
+  '        "PromiscuousMode":  false,\r\n' +
+  '        "ReceiveLinkSpeed":  null,\r\n' +
+  '        "State":  2,\r\n' +
+  '        "TransmitLinkSpeed":  null,\r\n' +
+  '        "Virtual":  false,\r\n' +
+  '        "VlanID":  null,\r\n' +
+  '        "WdmInterface":  false,\r\n' +
+  '        "PSComputerName":  null\r\n' +
+  '    },\r\n' +
+  '    {\r\n' +
+  '        "CimClass":  {\r\n' +
+  '                         "CimSuperClassName":  "CIM_NetworkPort",\r\n' +
+  '                         "CimSuperClass":  "ROOT/StandardCimv2:CIM_NetworkPort",\r\n' +
+  '                         "CimClassProperties":  "Caption Description ElementName InstanceID CommunicationStatus DetailedStatus HealthState InstallDate Name OperatingStatus OperationalStatus PrimaryStatus Status StatusDescriptions AvailableRequestedStates EnabledDefault = 2 EnabledState = 5 OtherEnabledState RequestedState = 12 TimeOfLastStateChange TransitioningToState = 12 AdditionalAvailability Availability CreationClassName DeviceID ErrorCleared ErrorDescription IdentifyingDescriptions LastErrorCode MaxQuiesceTime OtherIdentifyingInfo PowerManagementCapabilities PowerManagementSupported PowerOnHours StatusInfo SystemCreationClassName SystemName TotalPowerOnHours MaxSpeed OtherPortType PortType RequestedSpeed Speed UsageRestriction ActiveMaximumTransmissionUnit AutoSense FullDuplex LinkTechnology NetworkAddresses OtherLinkTechnology OtherNetworkPortType PermanentAddress PortNumber SupportedMaximumTransmissionUnit AdminLocked ComponentID ConnectorPresent DeviceName DeviceWakeUpEnable DriverDate DriverDateData DriverDescription DriverMajorNdisVersion DriverMinorNdisVersion DriverName DriverProvider DriverVersionString EndPointInterface HardwareInterface Hidden HigherLayerInterfaceIndices IMFilter InterfaceAdminStatus InterfaceDescription InterfaceGuid InterfaceIndex InterfaceName InterfaceOperationalStatus InterfaceType iSCSIInterface LowerLayerInterfaceIndices MajorDriverVersion MediaConnectState MediaDuplexState MinorDriverVersion MtuSize NdisMedium NdisPhysicalMedium NetLuid NetLuidIndex NotUserRemovable OperationalStatusDownDefaultPortNotAuthenticated OperationalStatusDownInterfacePaused OperationalStatusDownLowPowerState OperationalStatusDownMediaDisconnected PnPDeviceID PromiscuousMode ReceiveLinkSpeed State TransmitLinkSpeed Virtual VlanID WdmInterface",\r\n' +
+  '                         "CimClassQualifiers":  "UMLPackagePath = \\"CIM::Device::Ports\\" dynamic = True locale = 1033 provider = \\"NetAdapterCim\\"",\r\n' +
+  '                         "CimClassMethods":  "RequestStateChange SetPowerState Reset EnableDevice OnlineDevice QuiesceDevice SaveProperties RestoreProperties Enable Disable Restart Lock Unlock Rename",\r\n' +
+  '                         "CimSystemProperties":  "Microsoft.Management.Infrastructure.CimSystemProperties"\r\n' +
+  '                     },\r\n' +
+  '        "CimInstanceProperties":  [\r\n' +
+  '                                      "Caption",\r\n' +
+  '                                      "Description",\r\n' +
+  '                                      "ElementName",\r\n' +
+  '                                      "InstanceID = \\"{765D9F23-8E60-4FC8-807C-82C84279FC30}\\"",\r\n' +
+  '                                      "CommunicationStatus",\r\n' +
+  '                                      "DetailedStatus",\r\n' +
+  '                                      "HealthState",\r\n' +
+  '                                      "InstallDate",\r\n' +
+  '                                      "Name = \\"Wi-Fi\\"",\r\n' +
+  '                                      "OperatingStatus",\r\n' +
+  '                                      "OperationalStatus",\r\n' +
+  '                                      "PrimaryStatus",\r\n' +
+  '                                      "Status",\r\n' +
+  '                                      "StatusDescriptions",\r\n' +
+  '                                      "AvailableRequestedStates",\r\n' +
+  '                                      "EnabledDefault = 2",\r\n' +
+  '                                      "EnabledState = 5",\r\n' +
+  '                                      "OtherEnabledState",\r\n' +
+  '                                      "RequestedState = 12",\r\n' +
+  '                                      "TimeOfLastStateChange",\r\n' +
+  '                                      "TransitioningToState = 12",\r\n' +
+  '                                      "AdditionalAvailability",\r\n' +
+  '                                      "Availability",\r\n' +
+  '                                      "CreationClassName = \\"MSFT_NetAdapter\\"",\r\n' +
+  '                                      "DeviceID = \\"{765D9F23-8E60-4FC8-807C-82C84279FC30}\\"",\r\n' +
+  '                                      "ErrorCleared",\r\n' +
+  '                                      "ErrorDescription",\r\n' +
+  '                                      "IdentifyingDescriptions",\r\n' +
+  '                                      "LastErrorCode",\r\n' +
+  '                                      "MaxQuiesceTime",\r\n' +
+  '                                      "OtherIdentifyingInfo",\r\n' +
+  '                                      "PowerManagementCapabilities",\r\n' +
+  '                                      "PowerManagementSupported",\r\n' +
+  '                                      "PowerOnHours",\r\n' +
+  '                                      "StatusInfo",\r\n' +
+  '                                      "SystemCreationClassName = \\"CIM_NetworkPort\\"",\r\n' +
+  '                                      "SystemName = \\"DESKTOP-S3I47AB\\"",\r\n' +
+  '                                      "TotalPowerOnHours",\r\n' +
+  '                                      "MaxSpeed",\r\n' +
+  '                                      "OtherPortType",\r\n' +
+  '                                      "PortType",\r\n' +
+  '                                      "RequestedSpeed",\r\n' +
+  '                                      "Speed",\r\n' +
+  '                                      "UsageRestriction",\r\n' +
+  '                                      "ActiveMaximumTransmissionUnit = 1500",\r\n' +
+  '                                      "AutoSense",\r\n' +
+  '                                      "FullDuplex = True",\r\n' +
+  '                                      "LinkTechnology",\r\n' +
+  '                                      "NetworkAddresses = ...",\r\n' +
+  '                                      "OtherLinkTechnology",\r\n' +
+  '                                      "OtherNetworkPortType",\r\n' +
+  '                                      "PermanentAddress = \\"C0B5D720D8C9\\"",\r\n' +
+  '                                      "PortNumber = 0",\r\n' +
+  '                                      "SupportedMaximumTransmissionUnit",\r\n' +
+  '                                      "AdminLocked = False",\r\n' +
+  '                                      "ComponentID = \\"PCI\\\\VEN_168C\\u0026DEV_0042\\u0026SUBSYS_18101028\\u0026R...",\r\n' +
+  '                                      "ConnectorPresent = True",\r\n' +
+  '                                      "DeviceName = \\"\\\\Device\\\\{765D9F23-8E60-4FC8-807C-82C842...",\r\n' +
+  '                                      "DeviceWakeUpEnable = True",\r\n' +
+  '                                      "DriverDate = \\"2019-08-08\\"",\r\n' +
+  '                                      "DriverDateData = 132096960000000000",\r\n' +
+  '                                      "DriverDescription = \\"Qualcomm QCA9377 802.11ac Wireless Adap...",\r\n' +
+  '                                      "DriverMajorNdisVersion = 6",\r\n' +
+  '                                      "DriverMinorNdisVersion = 50",\r\n' +
+  '                                      "DriverName = \\"\\\\SystemRoot\\\\System32\\\\drivers\\\\Qcamain10x...",\r\n' +
+  '                                      "DriverProvider = \\"Qualcomm Communications Inc.\\"",\r\n' +
+  '                                      "DriverVersionString = \\"12.0.0.916\\"",\r\n' +
+  '                                      "EndPointInterface = False",\r\n' +
+  '                                      "HardwareInterface = True",\r\n' +
+  '                                      "Hidden = False",\r\n' +
+  '                                      "HigherLayerInterfaceIndices = ...",\r\n' +
+  '                                      "IMFilter = False",\r\n' +
+  '                                      "InterfaceAdminStatus = 1",\r\n' +
+  '                                      "InterfaceDescription = \\"Qualcomm QCA9377 802.11ac Wireless Adap...",\r\n' +
+  '                                      "InterfaceGuid = \\"{765D9F23-8E60-4FC8-807C-82C84279FC30}\\"",\r\n' +
+  '                                      "InterfaceIndex = 12",\r\n' +
+  '                                      "InterfaceName = \\"wireless_32768\\"",\r\n' +
+  '                                      "InterfaceOperationalStatus = 2",\r\n' +
+  '                                      "InterfaceType = 71",\r\n' +
+  '                                      "iSCSIInterface = False",\r\n' +
+  '                                      "LowerLayerInterfaceIndices",\r\n' +
+  '                                      "MajorDriverVersion = 1",\r\n' +
+  '                                      "MediaConnectState = 2",\r\n' +
+  '                                      "MediaDuplexState = 2",\r\n' +
+  '                                      "MinorDriverVersion = 9",\r\n' +
+  '                                      "MtuSize = 1500",\r\n' +
+  '                                      "NdisMedium = 16",\r\n' +
+  '                                      "NdisPhysicalMedium = 9",\r\n' +
+  '                                      "NetLuid = 19985273102270464",\r\n' +
+  '                                      "NetLuidIndex = 32768",\r\n' +
+  '                                      "NotUserRemovable = False",\r\n' +
+  '                                      "OperationalStatusDownDefaultPortNotAuthenticated = False",\r\n' +
+  '                                      "OperationalStatusDownInterfacePaused = False",\r\n' +
+  '                                      "OperationalStatusDownLowPowerState = False",\r\n' +
+  '                                      "OperationalStatusDownMediaDisconnected = True",\r\n' +
+  '                                      "PnPDeviceID = \\"PCI\\\\VEN_168C\\u0026DEV_0042\\u0026SUBSYS_18101028\\u0026R...",\r\n' +
+  '                                      "PromiscuousMode = False",\r\n' +
+  '                                      "ReceiveLinkSpeed",\r\n' +
+  '                                      "State = 2",\r\n' +
+  '                                      "TransmitLinkSpeed",\r\n' +
+  '                                      "Virtual = False",\r\n' +
+  '                                      "VlanID",\r\n' +
+  '                                      "WdmInterface = False"\r\n' +
+  '                                  ],\r\n' +
+  '        "CimSystemProperties":  {\r\n' +
+  '                                    "Namespace":  "ROOT/StandardCimv2",\r\n' +
+  '                                    "ServerName":  "DESKTOP-S3I47AB",\r\n' +
+  '                                    "ClassName":  "MSFT_NetAdapter",\r\n' +
+  '                                    "Path":  null\r\n' +
+  '                                },\r\n' +
+  '        "MacAddress":  "C0-B5-D7-20-D8-C9",\r\n' +
+  '        "Status":  "Disconnected",\r\n' +
+  '        "LinkSpeed":  "0 bps",\r\n' +
+  '        "MediaType":  "Native 802.11",\r\n' +
+  '        "PhysicalMediaType":  "Native 802.11",\r\n' +
+  '        "AdminStatus":  1,\r\n' +
+  '        "MediaConnectionState":  2,\r\n' +
+  '        "DriverInformation":  "Driver Date 2019-08-08 Version 12.0.0.916 NDIS 6.50",\r\n' +
+  '        "DriverFileName":  "Qcamain10x64.sys",\r\n' +
+  '        "NdisVersion":  "6.50",\r\n' +
+  '        "ifOperStatus":  2,\r\n' +
+  '        "ifAlias":  "Wi-Fi",\r\n' +
+  '        "InterfaceAlias":  "Wi-Fi",\r\n' +
+  '        "ifIndex":  12,\r\n' +
+  '        "ifDesc":  "Qualcomm QCA9377 802.11ac Wireless Adapter",\r\n' +
+  '        "ifName":  "wireless_32768",\r\n' +
+  '        "DriverVersion":  "12.0.0.916",\r\n' +
+  '        "LinkLayerAddress":  "C0-B5-D7-20-D8-C9",\r\n' +
+  '        "Caption":  null,\r\n' +
+  '        "Description":  null,\r\n' +
+  '        "ElementName":  null,\r\n' +
+  '        "InstanceID":  "{765D9F23-8E60-4FC8-807C-82C84279FC30}",\r\n' +
+  '        "CommunicationStatus":  null,\r\n' +
+  '        "DetailedStatus":  null,\r\n' +
+  '        "HealthState":  null,\r\n' +
+  '        "InstallDate":  null,\r\n' +
+  '        "Name":  "Wi-Fi",\r\n' +
+  '        "OperatingStatus":  null,\r\n' +
+  '        "OperationalStatus":  null,\r\n' +
+  '        "PrimaryStatus":  null,\r\n' +
+  '        "StatusDescriptions":  null,\r\n' +
+  '        "AvailableRequestedStates":  null,\r\n' +
+  '        "EnabledDefault":  2,\r\n' +
+  '        "EnabledState":  5,\r\n' +
+  '        "OtherEnabledState":  null,\r\n' +
+  '        "RequestedState":  12,\r\n' +
+  '        "TimeOfLastStateChange":  null,\r\n' +
+  '        "TransitioningToState":  12,\r\n' +
+  '        "AdditionalAvailability":  null,\r\n' +
+  '        "Availability":  null,\r\n' +
+  '        "CreationClassName":  "MSFT_NetAdapter",\r\n' +
+  '        "DeviceID":  "{765D9F23-8E60-4FC8-807C-82C84279FC30}",\r\n' +
+  '        "ErrorCleared":  null,\r\n' +
+  '        "ErrorDescription":  null,\r\n' +
+  '        "IdentifyingDescriptions":  null,\r\n' +
+  '        "LastErrorCode":  null,\r\n' +
+  '        "MaxQuiesceTime":  null,\r\n' +
+  '        "OtherIdentifyingInfo":  null,\r\n' +
+  '        "PowerManagementCapabilities":  null,\r\n' +
+  '        "PowerManagementSupported":  null,\r\n' +
+  '        "PowerOnHours":  null,\r\n' +
+  '        "StatusInfo":  null,\r\n' +
+  '        "SystemCreationClassName":  "CIM_NetworkPort",\r\n' +
+  '        "SystemName":  "DESKTOP-S3I47AB",\r\n' +
+  '        "TotalPowerOnHours":  null,\r\n' +
+  '        "MaxSpeed":  null,\r\n' +
+  '        "OtherPortType":  null,\r\n' +
+  '        "PortType":  null,\r\n' +
+  '        "RequestedSpeed":  null,\r\n' +
+  '        "Speed":  null,\r\n' +
+  '        "UsageRestriction":  null,\r\n' +
+  '        "ActiveMaximumTransmissionUnit":  1500,\r\n' +
+  '        "AutoSense":  null,\r\n' +
+  '        "FullDuplex":  true,\r\n' +
+  '        "LinkTechnology":  null,\r\n' +
+  '        "NetworkAddresses":  [\r\n' +
+  '                                 "C0B5D720D8C9"\r\n' +
+  '                             ],\r\n' +
+  '        "OtherLinkTechnology":  null,\r\n' +
+  '        "OtherNetworkPortType":  null,\r\n' +
+  '        "PermanentAddress":  "C0B5D720D8C9",\r\n' +
+  '        "PortNumber":  0,\r\n' +
+  '        "SupportedMaximumTransmissionUnit":  null,\r\n' +
+  '        "AdminLocked":  false,\r\n' +
+  '        "ComponentID":  "PCI\\\\VEN_168C\\u0026DEV_0042\\u0026SUBSYS_18101028\\u0026REV_31",\r\n' +
+  '        "ConnectorPresent":  true,\r\n' +
+  '        "DeviceName":  "\\\\Device\\\\{765D9F23-8E60-4FC8-807C-82C84279FC30}",\r\n' +
+  '        "DeviceWakeUpEnable":  true,\r\n' +
+  '        "DriverDate":  "2019-08-08",\r\n' +
+  '        "DriverDateData":  132096960000000000,\r\n' +
+  '        "DriverDescription":  "Qualcomm QCA9377 802.11ac Wireless Adapter",\r\n' +
+  '        "DriverMajorNdisVersion":  6,\r\n' +
+  '        "DriverMinorNdisVersion":  50,\r\n' +
+  '        "DriverName":  "\\\\SystemRoot\\\\System32\\\\drivers\\\\Qcamain10x64.sys",\r\n' +
+  '        "DriverProvider":  "Qualcomm Communications Inc.",\r\n' +
+  '        "DriverVersionString":  "12.0.0.916",\r\n' +
+  '        "EndPointInterface":  false,\r\n' +
+  '        "HardwareInterface":  true,\r\n' +
+  '        "Hidden":  false,\r\n' +
+  '        "HigherLayerInterfaceIndices":  [\r\n' +
+  '                                            49\r\n' +
+  '                                        ],\r\n' +
+  '        "IMFilter":  false,\r\n' +
+  '        "InterfaceAdminStatus":  1,\r\n' +
+  '        "InterfaceDescription":  "Qualcomm QCA9377 802.11ac Wireless Adapter",\r\n' +
+  '        "InterfaceGuid":  "{765D9F23-8E60-4FC8-807C-82C84279FC30}",\r\n' +
+  '        "InterfaceIndex":  12,\r\n' +
+  '        "InterfaceName":  "wireless_32768",\r\n' +
+  '        "InterfaceOperationalStatus":  2,\r\n' +
+  '        "InterfaceType":  71,\r\n' +
+  '        "iSCSIInterface":  false,\r\n' +
+  '        "LowerLayerInterfaceIndices":  null,\r\n' +
+  '        "MajorDriverVersion":  1,\r\n' +
+  '        "MediaConnectState":  2,\r\n' +
+  '        "MediaDuplexState":  2,\r\n' +
+  '        "MinorDriverVersion":  9,\r\n' +
+  '        "MtuSize":  1500,\r\n' +
+  '        "NdisMedium":  16,\r\n' +
+  '        "NdisPhysicalMedium":  9,\r\n' +
+  '        "NetLuid":  19985273102270464,\r\n' +
+  '        "NetLuidIndex":  32768,\r\n' +
+  '        "NotUserRemovable":  false,\r\n' +
+  '        "OperationalStatusDownDefaultPortNotAuthenticated":  false,\r\n' +
+  '        "OperationalStatusDownInterfacePaused":  false,\r\n' +
+  '        "OperationalStatusDownLowPowerState":  false,\r\n' +
+  '        "OperationalStatusDownMediaDisconnected":  true,\r\n' +
+  '        "PnPDeviceID":  "PCI\\\\VEN_168C\\u0026DEV_0042\\u0026SUBSYS_18101028\\u0026REV_31\\\\4\\u00261dbf6edc\\u00260\\u002600EE",\r\n' +
+  '        "PromiscuousMode":  false,\r\n' +
+  '        "ReceiveLinkSpeed":  null,\r\n' +
+  '        "State":  2,\r\n' +
+  '        "TransmitLinkSpeed":  null,\r\n' +
+  '        "Virtual":  false,\r\n' +
+  '        "VlanID":  null,\r\n' +
+  '        "WdmInterface":  false,\r\n' +
+  '        "PSComputerName":  null\r\n' +
+  '    },\r\n' +
+  '    {\r\n' +
+  '        "CimClass":  {\r\n' +
+  '                         "CimSuperClassName":  "CIM_NetworkPort",\r\n' +
+  '                         "CimSuperClass":  "ROOT/StandardCimv2:CIM_NetworkPort",\r\n' +
+  '                         "CimClassProperties":  "Caption Description ElementName InstanceID CommunicationStatus DetailedStatus HealthState InstallDate Name OperatingStatus OperationalStatus PrimaryStatus Status StatusDescriptions AvailableRequestedStates EnabledDefault = 2 EnabledState = 5 OtherEnabledState RequestedState = 12 TimeOfLastStateChange TransitioningToState = 12 AdditionalAvailability Availability CreationClassName DeviceID ErrorCleared ErrorDescription IdentifyingDescriptions LastErrorCode MaxQuiesceTime OtherIdentifyingInfo PowerManagementCapabilities PowerManagementSupported PowerOnHours StatusInfo SystemCreationClassName SystemName TotalPowerOnHours MaxSpeed OtherPortType PortType RequestedSpeed Speed UsageRestriction ActiveMaximumTransmissionUnit AutoSense FullDuplex LinkTechnology NetworkAddresses OtherLinkTechnology OtherNetworkPortType PermanentAddress PortNumber SupportedMaximumTransmissionUnit AdminLocked ComponentID ConnectorPresent DeviceName DeviceWakeUpEnable DriverDate DriverDateData DriverDescription DriverMajorNdisVersion DriverMinorNdisVersion DriverName DriverProvider DriverVersionString EndPointInterface HardwareInterface Hidden HigherLayerInterfaceIndices IMFilter InterfaceAdminStatus InterfaceDescription InterfaceGuid InterfaceIndex InterfaceName InterfaceOperationalStatus InterfaceType iSCSIInterface LowerLayerInterfaceIndices MajorDriverVersion MediaConnectState MediaDuplexState MinorDriverVersion MtuSize NdisMedium NdisPhysicalMedium NetLuid NetLuidIndex NotUserRemovable OperationalStatusDownDefaultPortNotAuthenticated OperationalStatusDownInterfacePaused OperationalStatusDownLowPowerState OperationalStatusDownMediaDisconnected PnPDeviceID PromiscuousMode ReceiveLinkSpeed State TransmitLinkSpeed Virtual VlanID WdmInterface",\r\n' +
+  '                         "CimClassQualifiers":  "UMLPackagePath = \\"CIM::Device::Ports\\" dynamic = True locale = 1033 provider = \\"NetAdapterCim\\"",\r\n' +
+  '                         "CimClassMethods":  "RequestStateChange SetPowerState Reset EnableDevice OnlineDevice QuiesceDevice SaveProperties RestoreProperties Enable Disable Restart Lock Unlock Rename",\r\n' +
+  '                         "CimSystemProperties":  "Microsoft.Management.Infrastructure.CimSystemProperties"\r\n' +
+  '                     },\r\n' +
+  '        "CimInstanceProperties":  [\r\n' +
+  '                                      "Caption",\r\n' +
+  '                                      "Description",\r\n' +
+  '                                      "ElementName",\r\n' +
+  '                                      "InstanceID = \\"{407464B3-C28B-45EB-BF70-46BA6F5B3469}\\"",\r\n' +
+  '                                      "CommunicationStatus",\r\n' +
+  '                                      "DetailedStatus",\r\n' +
+  '                                      "HealthState",\r\n' +
+  '                                      "InstallDate",\r\n' +
+  '                                      "Name = \\"Wi-Fi 2\\"",\r\n' +
+  '                                      "OperatingStatus",\r\n' +
+  '                                      "OperationalStatus",\r\n' +
+  '                                      "PrimaryStatus",\r\n' +
+  '                                      "Status",\r\n' +
+  '                                      "StatusDescriptions",\r\n' +
+  '                                      "AvailableRequestedStates",\r\n' +
+  '                                      "EnabledDefault = 2",\r\n' +
+  '                                      "EnabledState = 5",\r\n' +
+  '                                      "OtherEnabledState",\r\n' +
+  '                                      "RequestedState = 12",\r\n' +
+  '                                      "TimeOfLastStateChange",\r\n' +
+  '                                      "TransitioningToState = 12",\r\n' +
+  '                                      "AdditionalAvailability",\r\n' +
+  '                                      "Availability",\r\n' +
+  '                                      "CreationClassName = \\"MSFT_NetAdapter\\"",\r\n' +
+  '                                      "DeviceID = \\"{407464B3-C28B-45EB-BF70-46BA6F5B3469}\\"",\r\n' +
+  '                                      "ErrorCleared",\r\n' +
+  '                                      "ErrorDescription",\r\n' +
+  '                                      "IdentifyingDescriptions",\r\n' +
+  '                                      "LastErrorCode",\r\n' +
+  '                                      "MaxQuiesceTime",\r\n' +
+  '                                      "OtherIdentifyingInfo",\r\n' +
+  '                                      "PowerManagementCapabilities",\r\n' +
+  '                                      "PowerManagementSupported",\r\n' +
+  '                                      "PowerOnHours",\r\n' +
+  '                                      "StatusInfo",\r\n' +
+  '                                      "SystemCreationClassName = \\"CIM_NetworkPort\\"",\r\n' +
+  '                                      "SystemName = \\"DESKTOP-S3I47AB\\"",\r\n' +
+  '                                      "TotalPowerOnHours",\r\n' +
+  '                                      "MaxSpeed",\r\n' +
+  '                                      "OtherPortType",\r\n' +
+  '                                      "PortType",\r\n' +
+  '                                      "RequestedSpeed",\r\n' +
+  '                                      "Speed",\r\n' +
+  '                                      "UsageRestriction",\r\n' +
+  '                                      "ActiveMaximumTransmissionUnit = 1500",\r\n' +
+  '                                      "AutoSense",\r\n' +
+  '                                      "FullDuplex = True",\r\n' +
+  '                                      "LinkTechnology",\r\n' +
+  '                                      "NetworkAddresses = ...",\r\n' +
+  '                                      "OtherLinkTechnology",\r\n' +
+  '                                      "OtherNetworkPortType",\r\n' +
+  '                                      "PermanentAddress = \\"000F00B5406D\\"",\r\n' +
+  '                                      "PortNumber = 0",\r\n' +
+  '                                      "SupportedMaximumTransmissionUnit",\r\n' +
+  '                                      "AdminLocked = False",\r\n' +
+  '                                      "ComponentID = \\"USB\\\\VID_0BDA\\u0026PID_018A\\"",\r\n' +
+  '                                      "ConnectorPresent = True",\r\n' +
+  '                                      "DeviceName = \\"\\\\Device\\\\{407464B3-C28B-45EB-BF70-46BA6F...",\r\n' +
+  '                                      "DeviceWakeUpEnable = False",\r\n' +
+  '                                      "DriverDate = \\"2016-03-04\\"",\r\n' +
+  '                                      "DriverDateData = 131015232000000000",\r\n' +
+  '                                      "DriverDescription = \\"Realtek RTL8188CTV Wireless LAN 802.11n...",\r\n' +
+  '                                      "DriverMajorNdisVersion = 6",\r\n' +
+  '                                      "DriverMinorNdisVersion = 40",\r\n' +
+  '                                      "DriverName = \\"\\\\SystemRoot\\\\System32\\\\drivers\\\\rtwlanu_ol...",\r\n' +
+  '                                      "DriverProvider = \\"Microsoft\\"",\r\n' +
+  '                                      "DriverVersionString = \\"1027.4.630.2015\\"",\r\n' +
+  '                                      "EndPointInterface = False",\r\n' +
+  '                                      "HardwareInterface = True",\r\n' +
+  '                                      "Hidden = False",\r\n' +
+  '                                      "HigherLayerInterfaceIndices = ...",\r\n' +
+  '                                      "IMFilter = False",\r\n' +
+  '                                      "InterfaceAdminStatus = 1",\r\n' +
+  '                                      "InterfaceDescription = \\"Realtek RTL8188CTV Wireless LAN 802.11n...",\r\n' +
+  '                                      "InterfaceGuid = \\"{407464B3-C28B-45EB-BF70-46BA6F5B3469}\\"",\r\n' +
+  '                                      "InterfaceIndex = 9",\r\n' +
+  '                                      "InterfaceName = \\"wireless_32771\\"",\r\n' +
+  '                                      "InterfaceOperationalStatus = 2",\r\n' +
+  '                                      "InterfaceType = 71",\r\n' +
+  '                                      "iSCSIInterface = False",\r\n' +
+  '                                      "LowerLayerInterfaceIndices",\r\n' +
+  '                                      "MajorDriverVersion = 1",\r\n' +
+  '                                      "MediaConnectState = 2",\r\n' +
+  '                                      "MediaDuplexState = 2",\r\n' +
+  '                                      "MinorDriverVersion = 0",\r\n' +
+  '                                      "MtuSize = 1500",\r\n' +
+  '                                      "NdisMedium = 16",\r\n' +
+  '                                      "NdisPhysicalMedium = 9",\r\n' +
+  '                                      "NetLuid = 19985273152602112",\r\n' +
+  '                                      "NetLuidIndex = 32771",\r\n' +
+  '                                      "NotUserRemovable = False",\r\n' +
+  '                                      "OperationalStatusDownDefaultPortNotAuthenticated = False",\r\n' +
+  '                                      "OperationalStatusDownInterfacePaused = False",\r\n' +
+  '                                      "OperationalStatusDownLowPowerState = False",\r\n' +
+  '                                      "OperationalStatusDownMediaDisconnected = True",\r\n' +
+  '                                      "PnPDeviceID = \\"USB\\\\VID_0BDA\\u0026PID_018A\\\\00e04c000001\\"",\r\n' +
+  '                                      "PromiscuousMode = False",\r\n' +
+  '                                      "ReceiveLinkSpeed",\r\n' +
+  '                                      "State = 2",\r\n' +
+  '                                      "TransmitLinkSpeed",\r\n' +
+  '                                      "Virtual = False",\r\n' +
+  '                                      "VlanID",\r\n' +
+  '                                      "WdmInterface = True"\r\n' +
+  '                                  ],\r\n' +
+  '        "CimSystemProperties":  {\r\n' +
+  '                                    "Namespace":  "ROOT/StandardCimv2",\r\n' +
+  '                                    "ServerName":  "DESKTOP-S3I47AB",\r\n' +
+  '                                    "ClassName":  "MSFT_NetAdapter",\r\n' +
+  '                                    "Path":  null\r\n' +
+  '                                },\r\n' +
+  '        "MacAddress":  "00-0F-00-B5-40-6D",\r\n' +
+  '        "Status":  "Disconnected",\r\n' +
+  '        "LinkSpeed":  "0 bps",\r\n' +
+  '        "MediaType":  "Native 802.11",\r\n' +
+  '        "PhysicalMediaType":  "Native 802.11",\r\n' +
+  '        "AdminStatus":  1,\r\n' +
+  '        "MediaConnectionState":  2,\r\n' +
+  '        "DriverInformation":  "Driver Date 2016-03-04 Version 1027.4.630.2015 NDIS 6.40",\r\n' +
+  '        "DriverFileName":  "rtwlanu_oldIC.sys",\r\n' +
+  '        "NdisVersion":  "6.40",\r\n' +
+  '        "ifOperStatus":  2,\r\n' +
+  '        "ifAlias":  "Wi-Fi 2",\r\n' +
+  '        "InterfaceAlias":  "Wi-Fi 2",\r\n' +
+  '        "ifIndex":  9,\r\n' +
+  '        "ifDesc":  "Realtek RTL8188CTV Wireless LAN 802.11n USB 2.0 Network Adapter",\r\n' +
+  '        "ifName":  "wireless_32771",\r\n' +
+  '        "DriverVersion":  "1027.4.630.2015",\r\n' +
+  '        "LinkLayerAddress":  "00-0F-00-B5-40-6D",\r\n' +
+  '        "Caption":  null,\r\n' +
+  '        "Description":  null,\r\n' +
+  '        "ElementName":  null,\r\n' +
+  '        "InstanceID":  "{407464B3-C28B-45EB-BF70-46BA6F5B3469}",\r\n' +
+  '        "CommunicationStatus":  null,\r\n' +
+  '        "DetailedStatus":  null,\r\n' +
+  '        "HealthState":  null,\r\n' +
+  '        "InstallDate":  null,\r\n' +
+  '        "Name":  "Wi-Fi 2",\r\n' +
+  '        "OperatingStatus":  null,\r\n' +
+  '        "OperationalStatus":  null,\r\n' +
+  '        "PrimaryStatus":  null,\r\n' +
+  '        "StatusDescriptions":  null,\r\n' +
+  '        "AvailableRequestedStates":  null,\r\n' +
+  '        "EnabledDefault":  2,\r\n' +
+  '        "EnabledState":  5,\r\n' +
+  '        "OtherEnabledState":  null,\r\n' +
+  '        "RequestedState":  12,\r\n' +
+  '        "TimeOfLastStateChange":  null,\r\n' +
+  '        "TransitioningToState":  12,\r\n' +
+  '        "AdditionalAvailability":  null,\r\n' +
+  '        "Availability":  null,\r\n' +
+  '        "CreationClassName":  "MSFT_NetAdapter",\r\n' +
+  '        "DeviceID":  "{407464B3-C28B-45EB-BF70-46BA6F5B3469}",\r\n' +
+  '        "ErrorCleared":  null,\r\n' +
+  '        "ErrorDescription":  null,\r\n' +
+  '        "IdentifyingDescriptions":  null,\r\n' +
+  '        "LastErrorCode":  null,\r\n' +
+  '        "MaxQuiesceTime":  null,\r\n' +
+  '        "OtherIdentifyingInfo":  null,\r\n' +
+  '        "PowerManagementCapabilities":  null,\r\n' +
+  '        "PowerManagementSupported":  null,\r\n' +
+  '        "PowerOnHours":  null,\r\n' +
+  '        "StatusInfo":  null,\r\n' +
+  '        "SystemCreationClassName":  "CIM_NetworkPort",\r\n' +
+  '        "SystemName":  "DESKTOP-S3I47AB",\r\n' +
+  '        "TotalPowerOnHours":  null,\r\n' +
+  '        "MaxSpeed":  null,\r\n' +
+  '        "OtherPortType":  null,\r\n' +
+  '        "PortType":  null,\r\n' +
+  '        "RequestedSpeed":  null,\r\n' +
+  '        "Speed":  null,\r\n' +
+  '        "UsageRestriction":  null,\r\n' +
+  '        "ActiveMaximumTransmissionUnit":  1500,\r\n' +
+  '        "AutoSense":  null,\r\n' +
+  '        "FullDuplex":  true,\r\n' +
+  '        "LinkTechnology":  null,\r\n' +
+  '        "NetworkAddresses":  [\r\n' +
+  '                                 "000F00B5406D"\r\n' +
+  '                             ],\r\n' +
+  '        "OtherLinkTechnology":  null,\r\n' +
+  '        "OtherNetworkPortType":  null,\r\n' +
+  '        "PermanentAddress":  "000F00B5406D",\r\n' +
+  '        "PortNumber":  0,\r\n' +
+  '        "SupportedMaximumTransmissionUnit":  null,\r\n' +
+  '        "AdminLocked":  false,\r\n' +
+  '        "ComponentID":  "USB\\\\VID_0BDA\\u0026PID_018A",\r\n' +
+  '        "ConnectorPresent":  true,\r\n' +
+  '        "DeviceName":  "\\\\Device\\\\{407464B3-C28B-45EB-BF70-46BA6F5B3469}",\r\n' +
+  '        "DeviceWakeUpEnable":  false,\r\n' +
+  '        "DriverDate":  "2016-03-04",\r\n' +
+  '        "DriverDateData":  131015232000000000,\r\n' +
+  '        "DriverDescription":  "Realtek RTL8188CTV Wireless LAN 802.11n USB 2.0 Network Adapter",\r\n' +
+  '        "DriverMajorNdisVersion":  6,\r\n' +
+  '        "DriverMinorNdisVersion":  40,\r\n' +
+  '        "DriverName":  "\\\\SystemRoot\\\\System32\\\\drivers\\\\rtwlanu_oldIC.sys",\r\n' +
+  '        "DriverProvider":  "Microsoft",\r\n' +
+  '        "DriverVersionString":  "1027.4.630.2015",\r\n' +
+  '        "EndPointInterface":  false,\r\n' +
+  '        "HardwareInterface":  true,\r\n' +
+  '        "Hidden":  false,\r\n' +
+  '        "HigherLayerInterfaceIndices":  [\r\n' +
+  '                                            40\r\n' +
+  '                                        ],\r\n' +
+  '        "IMFilter":  false,\r\n' +
+  '        "InterfaceAdminStatus":  1,\r\n' +
+  '        "InterfaceDescription":  "Realtek RTL8188CTV Wireless LAN 802.11n USB 2.0 Network Adapter",\r\n' +
+  '        "InterfaceGuid":  "{407464B3-C28B-45EB-BF70-46BA6F5B3469}",\r\n' +
+  '        "InterfaceIndex":  9,\r\n' +
+  '        "InterfaceName":  "wireless_32771",\r\n' +
+  '        "InterfaceOperationalStatus":  2,\r\n' +
+  '        "InterfaceType":  71,\r\n' +
+  '        "iSCSIInterface":  false,\r\n' +
+  '        "LowerLayerInterfaceIndices":  null,\r\n' +
+  '        "MajorDriverVersion":  1,\r\n' +
+  '        "MediaConnectState":  2,\r\n' +
+  '        "MediaDuplexState":  2,\r\n' +
+  '        "MinorDriverVersion":  0,\r\n' +
+  '        "MtuSize":  1500,\r\n' +
+  '        "NdisMedium":  16,\r\n' +
+  '        "NdisPhysicalMedium":  9,\r\n' +
+  '        "NetLuid":  19985273152602112,\r\n' +
+  '        "NetLuidIndex":  32771,\r\n' +
+  '        "NotUserRemovable":  false,\r\n' +
+  '        "OperationalStatusDownDefaultPortNotAuthenticated":  false,\r\n' +
+  '        "OperationalStatusDownInterfacePaused":  false,\r\n' +
+  '        "OperationalStatusDownLowPowerState":  false,\r\n' +
+  '        "OperationalStatusDownMediaDisconnected":  true,\r\n' +
+  '        "PnPDeviceID":  "USB\\\\VID_0BDA\\u0026PID_018A\\\\00e04c000001",\r\n' +
+  '        "PromiscuousMode":  false,\r\n' +
+  '        "ReceiveLinkSpeed":  null,\r\n' +
+  '        "State":  2,\r\n' +
+  '        "TransmitLinkSpeed":  null,\r\n' +
+  '        "Virtual":  false,\r\n' +
+  '        "VlanID":  null,\r\n' +
+  '        "WdmInterface":  true,\r\n' +
+  '        "PSComputerName":  null\r\n' +
+  '    }\r\n' +
+  ']\r\n'

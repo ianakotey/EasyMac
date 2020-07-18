@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "electron": "^7.1.7",
-    "materialize-css": "^1.0.0-rc.2"
+    "fomantic-ui": "^2.8.4"
   }
 }

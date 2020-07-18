@@ -31,9 +31,9 @@ function getNetworkInterfaces(sync = false) {
     // return new Promise((resolve, reject) => null)
 
 
-    return (process.platform == 'win32') ? getWin32Interfaces() : 
-           (process.platform == 'linux') ? getLinuxInterfaces() :
-           new Promise((resolve, reject) => null)
+    return (process.platform == 'win32') ? getWin32Interfaces() :
+        (process.platform == 'linux') ? getLinuxInterfaces() :
+            new Promise((resolve, reject) => null)
 
 
 
@@ -46,26 +46,7 @@ function getNetworkInterfaces(sync = false) {
 // }
 
 
-// ! Unused
-function parseInterfaceData(data) {
-    // Parses data from ipconfig
 
-    data = data.split('\r\n').filter(x => x)
-
-    // * headings, or keys in a dictionary(excuse my Python)
-    keys = data[0].split(/\s\s+/)
-
-    interfaces = data.slice(2, data.length).map((interface) => {
-        temp = {}
-        interface.split(/\s\s+/).map((item, index) => {
-            temp[keys[index]] = item
-        })
-        return temp
-    })
-
-    return interfaces
-
-}
 
 
 function getWin32InterfacesSync() {
@@ -101,9 +82,32 @@ function getLinuxInterfacesSync() {
 
 
 async function getLinuxInterfaces() {
-    raw_interface_data =  await ( execFile( 'ifconfig' )).then( data => data.stdout )
-    
-    return raw_interface_data.split( '\n\n' ).filter( x => x )
+    rawInterfaceData = await (execFile('ifconfig')).then(data => data.stdout)
+
+    interfaceList = rawInterfaceData.split('\n\n').filter(x => x)
+
+    return interfaceList.map(adapter => {
+
+        result = {}
+
+        stateRunningData = adapter.match(/<([A-Z,]*)>/g)
+
+        if (stateRunningData !== null) {
+
+            result['State'] = stateRunningData[0].includes('UP') ? 'UP' : 'DOWN'
+            result['Running'] = stateRunningData[0].includes('RUNNING')
+            result['Loopback'] = stateRunningData[0].includes('LOOPBACK')
+
+            result['Alias'] = adapter.split(': ', 1)
+
+            result['MacAddress'] = result['Loopback'] ? '' : adapter.match(/\w\w:\w\w:\w\w:\w\w:\w\w:\w\w/g)[0]
+
+        }
+
+        return result
+
+    }).filter(adapter => !adapter['Loopback'])
+
 }
 
 
@@ -123,16 +127,26 @@ module.exports = {
 print('one')
 print('two')
 
-getNetworkInterfaces().then(data => {
-    for (item of data) {
-        result = {}
-        
-        tmp = item.match(/<(\S*)>/g)
-        result['Alias'] = item.split(': ', 1)
-        
-        print(result)
-    }
-})
+getLinuxInterfaces().then(x => print(x))
+// getNetworkInterfaces().then(data => {
+//     for (item of data) {
+//         result = {}
+
+//         stateRunningData = item.match(/<([A-Z,]*)>/g)
+
+//         if ( stateRunningData !== null && !  stateRunningData[0].includes('LOOPBACK')) {
+
+//             result['State'] = stateRunningData[0].includes('UP') ? 'UP' : 'DOWN'
+//             result['Running'] = stateRunningData[0].includes('RUNNING')
+
+//             result['Alias'] = item.split(': ', 1)
+
+//             result['MacAddress'] = item.match(/\w\w:\w\w:\w\w:\w\w:\w\w:\w\w/g)[0]
+
+//             print(result)
+//         }
+//     }
+// })
 
 print('three')
 print('four')

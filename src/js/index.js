@@ -7,9 +7,20 @@ const {
 } = require(`./NetworkInterfaces.js`)
 
 function updateSidePanel(element) {
-    console.log(element.dataset.Alias)
-    console.log(element.dataset.MacAddress)
-    console.log(element.dataset.LinkSpeed)
+
+    targetImage = document.getElementById('InterfaceImage')
+
+    // targetImage['src']  = 
+
+    targetText = document.getElementById('InterfaceText')
+
+    targetText.innerHTML =
+        `<!-- (つ◕౪◕)つ━☆ﾟ.*･｡ﾟ -->
+        Interface Name: ${element.dataset.ifalias}
+        <br>
+        Current MAC: ${element.dataset.macaddress}
+    `
+
 }
 
 
@@ -17,22 +28,45 @@ function updateSidePanel(element) {
 window.onload = () => {
     getNetworkInterfaces().then(interfaces => {
 
-        interfaceText = interfaces.map( interface => 
-            `<li class="collection-item green-text center-align btn"
-            data-MacAddress = ${interface['MacAddress']} 
-            data-Alias = ${interface['Alias']}
-            data-LinkSpeed = ${interface['LinkSpeed']}
-            onmouseover = updateSidePanel(this)
-            style="display:block">${interface['MacAddress']}</li>\n`
-        ).join('')
+        console.log(interfaces)
 
-        const list = document.querySelector('div.col.s7.m7.l9.teal > ul')
+        interfaceText = interfaces.map(interface =>
+            `<a href="#" class="teal item"
+                data-MacAddress = ${interface['MacAddress']} 
+                data-ifAlias = ${interface['ifAlias']}
+                data-LinkSpeed = ${interface['LinkSpeed']}
+                onmouseover = updateSidePanel(this)
+                
+             >
+             <i></i>
+                ${interface['ifAlias']}
+            </a>`
+        ).join('\n')
+
+        const list = document.getElementById('InterfaceMenu')
         list.innerHTML =
             `<!-- Network Interfaces here -->
 
-            <li class="collection-header center-align black-text btn btn-transparent"
-            style="display:block">Network Interfaces</li>
-            ${interfaceText}
+                <div class="header item">
+                    Network Interfaces
+                </div>
+
+                ${interfaceText}
+
+                <div class="item">
+                    <a>
+                        <i class="tty icon"></i>
+                        lorem ipsum
+                        <div class="ui teal left pointing label">1</div>
+                    </a>
+
+                </div>
+
+                <script type='text/javascript'>
+                    $('#InterfaceMenu')
+                        .dropdown()
+                    ;
+                </script>
 
             <!-- End of Network Interfaces -->`
 
@@ -60,3 +94,9 @@ document.querySelector('#maximizeOrRestore').addEventListener('click', (event) =
 document.querySelector('#close').addEventListener('click', () => {
     electron.remote.app.quit();
 });
+
+
+
+module.exports = {
+    updateSidePanel
+}

@@ -1,0 +1,25 @@
+.titlebar {
+  margin: 0em;
+  padding: 0em;
+}
+
+.titlebar .main {
+  padding: inherit;
+  margin: inherit;
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+#minimize,
+#maximizeOrRestore,
+#close {
+  display: inline;
+
+}
+
+body #mainApp {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(72, 105, 138);
+}
