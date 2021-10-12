@@ -10,7 +10,7 @@
   "author": "Ian Akotey",
   "license": "MIT",
   "dependencies": {
-    "electron": "^7.1.7",
+    "electron": "^11.5.0",
     "fomantic-ui": "^2.8.4"
   }
 }
